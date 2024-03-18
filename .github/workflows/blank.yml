@@ -37,6 +37,9 @@ jobs:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           custom_tag: ${{ steps.get_tag.outputs.version }}
           tag_prefix: ""
+      - name: Create PR
+        run: |
+          gh pr create --head --title "release: ${{ steps.get_tag.outputs.version }}" --body ""
 
       # Runs a set of commands using the runners shell
       # - name: Run a multi-line script
