@@ -38,6 +38,8 @@ jobs:
           custom_tag: ${{ steps.get_tag.outputs.version }}
           tag_prefix: ""
       - name: Create PR
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           gh pr create --head --fill --title 'release: ${{ steps.get_tag.outputs.version }}'
 
