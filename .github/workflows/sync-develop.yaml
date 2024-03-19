@@ -15,5 +15,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
+          git fetch origin
           pr_url=$(gh pr create --base develop --fill)
           gh pr merge $pr_url --rebase
