@@ -17,4 +17,4 @@ jobs:
         run: |
           git fetch origin
           pr_url=$(gh pr create --base develop --fill)
-          gh pr merge $pr_url --rebase
+          gh pr merge $pr_url --merge
