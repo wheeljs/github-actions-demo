@@ -9,6 +9,8 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: Create and Merge PR
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
