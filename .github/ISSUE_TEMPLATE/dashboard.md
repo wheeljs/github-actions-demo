@@ -1,7 +1,7 @@
 ---
 name: 运营数据校准
 about: 报告一个数据错误，这将帮助我们校准数据
-labels: "Dashboard Data"
+labels: "dashboard data"
 ---
 
 **看板年月**(格式：2024-3)
@@ -10,7 +10,7 @@ labels: "Dashboard Data"
 
 
 
-**错误位置**
+**错误位置**（在正确的选项的中括号内添加x）
 
 **Error Location**
 
