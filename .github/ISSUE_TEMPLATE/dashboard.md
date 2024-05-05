@@ -2,6 +2,7 @@
 name: 运营数据校准
 about: 报告一个数据错误，这将帮助我们校准数据
 labels: "dashboard data"
+assignees: wheeljs
 ---
 
 **看板年月**(格式：2024-3)
