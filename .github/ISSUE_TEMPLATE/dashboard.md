@@ -3,6 +3,15 @@ name: 运营数据校准
 about: 报告一个数据错误，这将帮助我们校准数据
 labels: "dashboard data"
 assignees: wheeljs
+body:
+- type: input
+  id: range
+  attributes:
+    label: Range
+    description: 看板年月
+    placeholder: "2024-3"
+  validations:
+    required: true
 ---
 
 **看板年月**(格式：2024-3)
